@@ -1,0 +1,94 @@
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Style for the heading (h1) in the navbar */
+.navbar h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* Navigation links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.navbar li{
+  font-size: 20px;
+}
+/* Increase font weight of li content on hover */
+.navbar li:hover {
+  font-weight: bold;
+  font-size: 20px;/* Increase font weight on hover */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Underline effect on hover */
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ff6600;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Animate the underline on hover */
+.navbar a:hover::before {
+  width: 100%;
+}
+/*adding (h1) in the navbar */
+.navbar h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+/* Navigation links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+/* Underline effect on hover */
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Underline thickness */
+  bottom: -2px; /* Position the underline below the text */
+  left: 0; /* Start from the left edge */
+  background-color: #ff6600; /* Orange color for the underline */
+  transition: width 0.5s ease-in-out; /* Smooth transition for the underline width */
+}
+
+/* Animate the underline on hover */
+.navbar a:hover::before {
+  width: 100%; /* Expand the underline to 100% on hover */
+}

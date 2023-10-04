@@ -1,0 +1,148 @@
+/* admin-dashboard.component.css */
+
+/* Styling for the entire admin dashboard */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Styling for the main heading */
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff; /* Light text color */
+  text-align: center;
+}
+
+/* Styling for the containers wrapper */
+.containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Styling for the "Add New Profile" container */
+.add-profile-container {
+  flex: 1;
+  background-color: #444; /* Darker background color */
+  padding: 30px;
+  border: 1px solid #333; /* Slightly lighter border color */
+  border-radius: 5px;
+  margin-right: 20px;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Styling for form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff; /* Light text color */
+}
+
+/* Styling for form inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff; /* Light text color */
+  background-color: #555; /* Input background color */
+}
+
+/* Styling for form buttons */
+button[type="submit"],
+button[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Style for form buttons on hover */
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the "Profile List" container */
+.profile-list-container {
+  flex: 1;
+  background-color: #444; /* Darker background color */
+  padding: 20px;
+  border: 1px solid #333; /* Slightly lighter border color */
+  border-radius: 5px;
+}
+
+/* Styling for each profile item */
+.profile-item {
+  border: 2px solid #333; /* Slightly lighter border color */
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #555; /* Item background color */
+}
+
+/* Styling for profile item image */
+.profile-item img {
+  width: 300px; /* Increased width */
+  height: 400px; /* Increased height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  display: block;
+  margin: 0 auto 10px;
+  border: 2px solid #fff; /* White border around images */
+  background-color: #fff; /* White background behind images */
+  border-radius: 5px; /* Border radius for images */
+}
+
+
+
+/* Styling for profile item name */
+.profile-item h4 {
+  font-size: 24px;
+  color: #fff; /* Light text color */
+}
+
+/* Styling for profile item description */
+.profile-item p {
+  color: #ccc; /* Slightly lighter text color */
+  font-size: 16px;
+}
+
+/* Styling for profile action buttons */
+.profile-actions button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Style for profile action buttons on hover */
+.profile-actions button:hover {
+  background-color: #0056b3;
+}

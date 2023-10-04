@@ -1,0 +1,20 @@
+<!-- Add this input field in your template -->
+<input
+  type="text"
+  [(ngModel)]="searchText"
+  (input)="filterProfiles()"
+  placeholder="Search profiles"
+/>
+<!-- Update your profile list rendering to use filteredProfiles -->
+<div class="profile-list">
+  <div
+    class="profile-item"
+    *ngFor="let profile of filteredProfiles"
+    (click)="showProfileDetails(profile)"
+  >
+    <img [src]="profile.photo" alt="{{ profile.name }}" />
+    <h4>{{ profile.name }}</h4>
+    <p>{{ profile.description }}</p>
+    <!-- Add any other profile details you want to display -->
+  </div>
+</div>
